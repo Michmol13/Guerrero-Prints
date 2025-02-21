@@ -1,26 +1,83 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background: url('img/banner.jpg') center/cover no-repeat;
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.btn-search:hover{
+    background-color: #c8c8c8;
+}
+#welcome {
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-header .container {
+#welcome .container2 {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
 
-footer i {
-    font-size: 24px;
+#information {
+    text-align: center;
+}
+
+#information h3 {
+    color: #333;
+}
+
+#gallery {
+    text-align: center;
+}
+
+#gallery h2 {
+    padding: 15px;
 }
 
 .carousel img {
-    height: 400px;
-    object-fit: cover;
+    height: 450px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+#contact {
+    text-align: center;
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+}
+
+#contact a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#contact i {
+    font-size: 24px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.modal-content {
+    text-align: center;
 }
