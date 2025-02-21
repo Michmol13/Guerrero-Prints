@@ -1,20 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F5F5DC;
+    color: #222222; 
 }
 
+/*Barra de navegación*/
 .navbar {
-    background-color: #f8f9fa;
+    background-color: #999924;
 }
 
 .navbar-brand {
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 
-.btn-search:hover{
+.btn-search:hover {
     background-color: #c8c8c8;
 }
+
+/*Bienvenida*/
 #welcome {
     height: 60vh;
     display: flex;
@@ -23,27 +29,28 @@ body {
     text-align: center;
 }
 
-#welcome .container2 {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+.container2{
+    background-image: url(/Guerrero-Prints/img/Bienvenida.png); 
 }
 
+/* Información */
 #information {
     text-align: center;
     border-radius: 6px;
 }
 
 #information h3 {
-    color: #333;
+    color: #999924; /* Color principal */
 }
 
+/* Galería */
 #gallery {
     text-align: center;
 }
 
 #gallery h2 {
     padding: 15px;
+    color: #999924; /* Resalta el título */
 }
 
 .carousel img {
@@ -53,15 +60,16 @@ body {
     margin: auto;
 }
 
+/* Contacto */
 #contact {
     text-align: center;
-    background-color: #212529;
-    color: white;
+    background-color: #222222; /* Fondo oscuro para contraste */
+    color: #F5F5DC;
     padding: 20px 0;
 }
 
 #contact a {
-    color: white;
+    color: #F5F5DC;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -70,15 +78,44 @@ body {
     font-size: 24px;
 }
 
+/* Botones */
 .btn-primary {
-    background-color: #007bff;
+    background-color: #999924; /* Color principal */
     border: none;
+    color: #F5F5DC;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #666618; /* Color más oscuro al pasar el cursor */
 }
 
+/* Botones generales */
+button {
+    background-color: #999924;
+    color: #F5F5DC;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #666618; /* Un poco más oscuro para hover */
+}
+
+/* Enlaces */
+a {
+    color: #999924;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #666618;
+}
+
+/* Modales */
 .modal-content {
     text-align: center;
 }
