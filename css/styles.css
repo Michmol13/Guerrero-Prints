@@ -31,6 +31,7 @@ body {
 
 #information {
     text-align: center;
+    border-radius: 6px;
 }
 
 #information h3 {
