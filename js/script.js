@@ -2,7 +2,7 @@ const navbarLinks = document.querySelectorAll(".nav-link");
 const navbarToggler = document.querySelector(".navbar-toggler");
 const botonAbrirModal = document.getElementById("abrirModal");
 const modalElement = document.getElementById("miModal");
-const carruselElement = document.getElementById("miCarrusel");
+const carruselElement = document.getElementById("miCarrusel")
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Página cargada correctamente");
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (carruselElement) {
         var carrusel = new bootstrap.Carousel(carruselElement, {
-            interval: 3000,  // Cambia cada 3 segundos
-            wrap: true       // Vuelve a la primera imagen al final
+            interval: 3000,
+            wrap: true 
         });
     }
 
@@ -30,4 +30,20 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let scrollTopBtn = document.getElementById("TopBtn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 });
