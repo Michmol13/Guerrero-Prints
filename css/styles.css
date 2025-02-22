@@ -7,11 +7,11 @@ body {
 }
 
 .navbar {
-    background-color: #999924;
+    background-color: #F5F5DC;
 }
 
 .navbar-brand {
-    color: white;
+    color: #999924;
     font-weight: bold;
 }
 
@@ -20,7 +20,9 @@ body {
 }
 
 #welcome {
-    height: 60vh;
+    height: auto;
+    min-height: 50vh;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,25 +31,33 @@ body {
 
 .container2{
     width: 70%;
-    height: 90%;
-    margin-top: 130px;
+    min-height: 300px;
+    margin-top: 15px;
+    padding: 30px;
     justify-content: center;
     align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../img/Bienvenida.png); 
+    background-position: center;
     color: black;
+    background-image: url(../img/Bienvenida.png); 
 }
 
 .titulo1{
-    margin-left: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 40px;
+    top: -35px;
+    position: relative;
+    font-style: oblique;
 }
 
 #information {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 20px;
 }
 
 .row{
@@ -185,4 +195,27 @@ a:hover {
 
 #TopBtn:hover {
     background-color: #666618;
+}
+
+/*Medidas para móviles */
+@media (max-width: 480px) {
+    #welcome {
+        min-height: 35vh;
+    }
+
+    .container2 {
+        width: 100%;
+        min-height: 100px;
+        background-size: contain;
+        padding: 5px;
+    }
+
+    .titulo1 {
+        font-size: 8px;
+        text-align: center;
+        margin-right: 20px;
+        position: relative;
+        top: 1px;
+        font-style: oblique;
+    }
 }
