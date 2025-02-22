@@ -201,15 +201,7 @@ a:hover {
 @media (max-width: 480px) {
     #welcome {
         min-height: 35vh;
-    }
-
-    body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #F5F5DC;
-        color: #222222; 
-    }    
+    } 
 
     .container2 {
         width: 100%;
