@@ -21,7 +21,6 @@ body {
 
 #welcome {
     height: auto;
-    min-height: 50vh;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -29,25 +28,27 @@ body {
     text-align: center;
 }
 
+
 .container2{
-    width: 70%;
-    min-height: 300px;
+    width: 60%;
+    height: 400px;
     margin-top: 15px;
     padding: 30px;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     color: black;
     background-image: url(../img/Bienvenida.png); 
 }
 
 .titulo1{
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
     margin-left: 40px;
     top: -35px;
@@ -70,24 +71,33 @@ body {
     border: #222222 1px solid;
     border-radius: 10px;
     margin: 5px;
-    height: 100%;
-    padding: 14px;
+    height: 170px;
+    padding: 20px;
 }
 
 #col2{
     border: #222222 1px solid;
     border-radius: 10px;
     margin: 5px;
-    height: 100%;
-    padding: 14px;
+    height: 170px;
+    padding: 20px;
 }
 
 #col3{
     border: #222222 1px solid;
     border-radius: 10px;
     margin: 5px;
-    height: 100%;
-    padding: 17px;
+    height: 170px;
+    padding: 20px;
+}
+
+.subTit{
+    margin-bottom: 20px;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
 }
 
 #information h3 {
@@ -177,6 +187,11 @@ a:hover {
 .icono {
     height: 65px;
     width: 65px;
+    transition: transform 0.3s ease;
+}
+
+.icono:hover {
+    transform: scale(1.2);
 }
 
 #TopBtn {
@@ -200,22 +215,108 @@ a:hover {
 /*Medidas para móviles */
 @media (max-width: 480px) {
     #welcome {
-        min-height: 35vh;
-    } 
-
-    .container2 {
-        width: 100%;
-        min-height: 100px;
-        background-size: contain;
+        height: 170px;
         padding: 5px;
     }
-
-    .titulo1 {
-        font-size: 8px;
+    
+    .container2{
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        background-size:cover;
+        background-position:top;
+        background-repeat: no-repeat;
+        background-image: url(../img/Bienvenida.png); 
+    }
+    
+    .titulo1{
+        font-size: 15px;
+        font-weight: bold;
         text-align: center;
-        margin-right: 20px;
+        margin-left: 20px;
         position: relative;
-        top: 1px;
         font-style: oblique;
+        color: black;
+    }
+
+    #information {
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+/*Medidas para Tablets */
+@media (482px <= width <= 1023px){
+    #welcome {
+        height: 170px;
+        padding: 5px;
+    }
+    
+    .container2{
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        background-size:cover;
+        
+        
+        background-repeat: no-repeat;
+        background-image: url(../img/Bienvenida.png); 
+    }
+    
+    .titulo1{
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 20px;
+        position: relative;
+        font-style: oblique;
+        color: black;
+    }
+
+    #information {
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+/*Medidas para Laptops */
+@media (1024px <= width <=1902){
+    #welcome {
+        height: 170px;
+        padding: 5px;
+    }
+    
+    .container2{
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        background-size:cover;
+        background-position:top;
+        background-repeat: no-repeat;
+        background-image: url(../img/Bienvenida.png); 
+    }
+    
+    .titulo1{
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 20px;
+        position: relative;
+        font-style: oblique;
+        color: black;
+    }
+
+    #information {
+        text-align: center;
+        padding-top: 5px;
     }
 }
