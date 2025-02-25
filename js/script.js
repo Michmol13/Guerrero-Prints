@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (carruselElement) {
         var carrusel = new bootstrap.Carousel(carruselElement, {
-            interval: 3000,
+            interval: 2000,
             wrap: true 
         });
     }
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let scrollTopBtn = document.getElementById("TopBtn");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) {
+        if (window.scrollY > 50) {
             scrollTopBtn.style.display = "block";
         } else {
             scrollTopBtn.style.display = "none";
