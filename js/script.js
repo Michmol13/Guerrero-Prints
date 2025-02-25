@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let scrollTopBtn = document.getElementById("TopBtn");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 300) {
             scrollTopBtn.style.display = "block";
         } else {
             scrollTopBtn.style.display = "none";
