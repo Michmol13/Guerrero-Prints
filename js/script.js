@@ -6,22 +6,7 @@ const carruselElement = document.getElementById("miCarrusel")
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Página cargada correctamente");
-
     
-    if (botonAbrirModal && modalElement) {
-        var modal = new bootstrap.Modal(modalElement);
-        botonAbrirModal.addEventListener("click", function() {
-            modal.show();
-        });
-    }
-
-    if (carruselElement) {
-        var carrusel = new bootstrap.Carousel(carruselElement, {
-            interval: 3000,
-            wrap: true 
-        });
-    }
-
     navbarLinks.forEach(function(link) {
         link.addEventListener("click", function() {
             if (window.innerWidth < 992) { 
@@ -29,7 +14,20 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
+    
+    if (carruselElement) {
+        var carrusel = new bootstrap.Carousel(carruselElement, {
+            interval: 3000,
+            wrap: true 
+        });
+    }
+    
+    if (botonAbrirModal && modalElement) {
+        var modal = new bootstrap.Modal(modalElement);
+        botonAbrirModal.addEventListener("click", function() {
+            modal.show();
+        });
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
